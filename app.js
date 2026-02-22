@@ -2,7 +2,7 @@ let input = document.querySelector("input");
 let btn = document.querySelector("button");
 let container = document.querySelector(".results"); // cards yaha show honge
 
-let url = "http://universities.hipolabs.com/search?country=";
+let url = "/api/colleges?country=";
 console.log(url)
 let results = document.querySelector(".results");
 let topBtn = document.getElementById("topBtn");
