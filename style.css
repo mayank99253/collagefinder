@@ -1,0 +1,147 @@
+/* Body */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dcdde1;
+  overflow: hidden; /* page scroll band */
+}
+
+/* Main Container */
+.container {
+  width: 400px;
+  height: 600px; /* fixed height */
+  background: #f4f6f8;
+  padding: 25px;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Heading */
+.container h1 {
+  text-align: center;
+  color: #2c5aa0;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-box input:focus {
+  border-color: #2c5aa0;
+}
+
+/* Button */
+.search-box button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #2c5aa0;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.search-box button:hover {
+  background: #1e3f73;
+}
+
+/* Results Section */
+.results {
+  flex: 1; /* remaining space lega */
+  overflow-y: auto; /* sirf yaha scroll hoga */
+  padding-right: 5px;
+}
+
+/* Scrollbar Styling (optional but professional) */
+.results::-webkit-scrollbar {
+  width: 6px;
+}
+
+.results::-webkit-scrollbar-thumb {
+  background: #2c5aa0;
+  border-radius: 10px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #2c5aa0;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.card p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.card h3 {
+  font-size: 15px;
+  color: #1f3c88;
+  margin-bottom: 5px;
+}
+
+.card {
+  background: #e3ebf5;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Back To Top Button */
+#topBtn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: #2c5aa0;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: none; /* initially hidden */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+#topBtn:hover {
+  background: #1e3f73;
+}
+
+/* Important */
+.container {
+  position: relative; /* button container ke andar rahe */
+}
